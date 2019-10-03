@@ -1,6 +1,8 @@
 const express = require('express');
 const routes = require('./routes');
 const mongoose = require('mongoose');
+const cors = require('cors');
+const path = require('path');
 
 const app = express();
 mongoose.connect('mongodb+srv://semana9:semana9@omnistack9-ujaig.mongodb.net/test?retryWrites=true&w=majority',{
@@ -8,7 +10,13 @@ mongoose.connect('mongodb+srv://semana9:semana9@omnistack9-ujaig.mongodb.net/tes
     useUnifiedTopology: true
 });
 
+
 app.use(express.json());
+app.use(cors());
+
+app.use('/files', 
+express
+.static(path.resolve(__dirname,'..','uploads')));
 app.use(routes);
 
 
