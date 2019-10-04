@@ -11,11 +11,7 @@ async store(req, res){
         user = await User.create({email});
     }
         
-
-
     return res.json(user);
-
-
 }
 
 
