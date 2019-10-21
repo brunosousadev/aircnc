@@ -13,13 +13,10 @@ Aircnc, uma aplicação similar ao Airbnb que permite cadastrar sposts para que 
 - [Node.js](https://nodejs.org/en/)
 - [Yarn](https://yarnpkg.com/pt-BR/docs/install)
 
-Aplicação desenvolvida com Node.js no back-end, React no front-end e React Native para mobile, além de socket.io para informações em tempo real. 
-
-
 
 ## Passos para utilizar 
 1. Faça um clone desse repositório;
-2. Entre na pasta `cd avicena_selection`;
+2. Entre na pasta `cd aircnc`;
 
 ## Backend
 1. Entre na pasta `cd backend`;
